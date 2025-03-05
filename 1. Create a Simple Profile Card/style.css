@@ -1,0 +1,83 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.profile-card {
+    background:white;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #2575fc;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color:darkcyan;
+}
+
+.designation {
+    font-size: 1rem;
+    color:maroon;
+    margin: 5px 0;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: aqua;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 20px;
+    color: #2575fc;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: yellowgreen;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+    }
+}
